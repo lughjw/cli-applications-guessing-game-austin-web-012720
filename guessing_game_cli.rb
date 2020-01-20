@@ -1,10 +1,10 @@
 # Code your solution here!
 def run_guessing_game
   number_to_guess = generate_number
-  guess = user_guess.to_i
+  guess = user_guess
   if guess == "exit"
     exit_message
-  elsif guess == number_to_guess
+  elsif guess == number_to_guess.to_i
     success_message
   else
     fail_message(number_to_guess)

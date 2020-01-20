@@ -1,9 +1,7 @@
-require 'pry'
 # Code your solution here!
 def run_guessing_game
   number_to_guess = generate_number.to_s
   guess = user_guess
-  binding.pry
   if guess == "exit"
     exit_message
   elsif guess == number_to_guess

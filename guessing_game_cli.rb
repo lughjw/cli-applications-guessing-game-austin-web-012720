@@ -2,7 +2,7 @@
 def run_guessing_game
   number_to_guess = generate_number
   guess = user_guess
-  if guess = "exit"
+  if guess == "exit"
     exit_message
   elsif guess == number_to_guess
     success_message(number)

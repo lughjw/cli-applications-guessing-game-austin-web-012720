@@ -6,7 +6,7 @@ def run_guessing_game
   binding.pry
   if guess == "exit"
     exit_message
-  elsif guess == number_to_guess.to_i
+  elsif guess == number_to_guess
     success_message
   else
     fail_message(number_to_guess)

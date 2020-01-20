@@ -20,7 +20,7 @@ end
 
 def user_guess
   puts "Please guess a number between 1 and 6:"
-  gets
+  gets.chomp
 end
 
 def exit_message

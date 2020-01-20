@@ -1,7 +1,7 @@
 # Code your solution here!
 def run_guessing_game
-  number_to_guess = generate_number.to_s
-  guess = user_guess
+  number_to_guess = generate_number
+  guess = user_guess.to_i
   if guess == "exit"
     exit_message
   elsif guess == number_to_guess

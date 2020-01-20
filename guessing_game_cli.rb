@@ -19,7 +19,7 @@ def generate_number(min=1, max=6)
 end
 
 def user_guess
-  #puts "Please guess a number between 1 and 6:"
+  puts "Please guess a number between 1 and 6:"
   gets
 end
 

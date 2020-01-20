@@ -7,7 +7,7 @@ def run_guessing_game
   elsif guess == number_to_guess
     success_message
   else
-    fail_message(number)
+    fail_message(guess)
   end
 end
 

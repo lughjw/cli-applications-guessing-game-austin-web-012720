@@ -5,9 +5,9 @@ def run_guessing_game
   if guess == "exit"
     exit_message
   elsif guess == number_to_guess
-    success_message(number)
+    success_message
   else
-    fail_message
+    fail_message(number)
   end
 end
 

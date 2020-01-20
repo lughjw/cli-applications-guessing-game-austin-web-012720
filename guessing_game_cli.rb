@@ -2,7 +2,13 @@
 def run_guessing_game
   number_to_guess = generate_number
   guess = user_guess
-  if 
+  if guess = "exit"
+    exit_message
+  elsif guess == number_to_guess
+    success_message(number)
+  else
+    fail_message
+  end
 end
 
 def generate_number(min=1, max=6)
@@ -11,6 +17,18 @@ def generate_number(min=1, max=6)
 end
 
 def user_guess
-  puts "Please guess a number between 1 and 6"
+  puts "Please guess a number between 1 and 6:"
   gets
+end
+
+def exit_message
+  puts "Goodbye!"
+end
+
+def success_message
+  puts "You guessed the correct number!"
+end
+
+def fail_message(number)
+  puts "Sorry! the computer guessed #{number}"
 end

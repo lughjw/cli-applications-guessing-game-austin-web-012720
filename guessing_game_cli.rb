@@ -30,5 +30,5 @@ def success_message
 end
 
 def fail_message(number)
-  puts "Sorry! the computer guessed #{number}."
+  puts "Sorry! The computer guessed #{number}."
 end
